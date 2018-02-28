@@ -1,0 +1,25 @@
+{
+  "name": "dmgload",
+  "version": "1.0.0",
+  "description": "Highly performant, light and configurable lazy loader in pure JS with no dependencies for images in H5.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MRLuowen/Dmgload.git"
+  },
+  "keywords": [
+    "lazy",
+    "lazyload",
+    "light",
+    "image"
+  ],
+  "author": "luowen19920829@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MRLuowen/Dmgload/issues"
+  },
+  "homepage": "https://github.com/MRLuowen/Dmgload#readme"
+}
