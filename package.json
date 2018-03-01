@@ -4,6 +4,7 @@
   "description": "Highly performant, light and configurable lazy loader in pure JS with no dependencies for images in H5.",
   "main": "src/index.js",
   "scripts": {
+    "build": "cross-env NODE_ENV=production node build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,17 @@
   "bugs": {
     "url": "https://github.com/MRLuowen/Dmgload/issues"
   },
-  "homepage": "https://github.com/MRLuowen/Dmgload#readme"
+  "homepage": "https://github.com/MRLuowen/Dmgload#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "rollup": "^0.49.2",
+    "chokidar": "^1.7.0",
+    "cross-env": "^5.0.5",
+    "rollup-plugin-babel": "^3.0.2",
+    "rollup-plugin-filesize": "^1.4.2",
+    "rollup-plugin-license": "^0.5.0",
+    "rollup-plugin-uglify": "^2.0.1"
+  }
 }
