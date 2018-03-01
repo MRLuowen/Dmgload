@@ -14,8 +14,8 @@
 ## Install
 
 ```sh
-# You can install lozad with npm
-$ npm install --save Dmgload
+# You can install dmgload with npm
+$ npm install --save dmgload
 ```
 
 ## Usage
@@ -23,12 +23,12 @@ Then with a module bundler like rollup or webpack, use as you would anything els
 
 ```javascript
 // using ES6 modules
-import dmgload from 'Dmgload';
-dmgload.Dmgload();
+import dmgload from 'dmgload';
+dmgload.lazyload();
 
 // using CommonJS modules
 var dmgload = require('dmgload');
-dmgload.Dmgload();
+dmgload.lazyload();
 ```
 ```html
 <script type="text/javascript" src="/dist/dmgload.min.js"></script>
@@ -43,7 +43,7 @@ In HTML, add an identifier to the element (default selector identified is `lazyl
 you can also set some options to controll the actions
 ```javascript
 import dmgload from 'Dmgload';
-dmgload.Dmgload{
+dmgload.lazyload{
     selector: ".lazyload",
     offset: 50,  //偏移量，在距离视口多远的时候就开始加载
     debounce_time: 30, //防抖时间，在该时间内时是不会重复触发了。

@@ -11,7 +11,7 @@
 ## 安装
 
 ```sh
-# You can install lozad with npm
+# You can install dmgload with npm
 $ npm install --save dmgload
 ```
 
@@ -21,11 +21,11 @@ $ npm install --save dmgload
 ```javascript
 // using ES6 modules
 import dmgload from 'Dmgload';
-dmgload.Dmgload();
+dmgload.lazyload();
 
 // using CommonJS modules
 var dmgload = require('dmgload');
-dmgload.Dmgload();
+dmgload.lazyload();
 ```
 
 ```html
@@ -42,7 +42,7 @@ dmgload.Dmgload();
 你也可以通过自己的需求做一些定制，参数以及含义如下。
 ```javascript
 import dmgload from 'Dmgload';
-dmgload.Dmgload{
+dmgload.lazyload{
     selector: ".lazyload",
     offset: 50,  //偏移量，在距离视口多远的时候就开始加载
     debounce_time: 30, //防抖时间，在该时间内时是不会重复触发了。

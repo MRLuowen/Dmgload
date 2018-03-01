@@ -61,7 +61,7 @@ function throttle(func, config) {
 }
 
 export default {
-    Dmgload: function(options = {}) {
+    lazyload: function(options = {}) {
         var config = {...defaultConfig, ...options};
         // 在滑动的时候触发了该事件。
         var updateImg = throttle(loadImage,config);
@@ -76,6 +76,8 @@ export default {
         } else {
             // 使用定时器查看是否需要更新。
             setInterval( updateImg, config.throttle_time);
-        }   
+        }
+        // 如果直出的页面本身就拥有了需要懒加载的文件，页面一开始也要执行一遍。
+        updateImg();
     }
 } 

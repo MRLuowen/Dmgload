@@ -1,8 +1,8 @@
 {
   "name": "dmgload",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Highly performant, light and configurable lazy loader in pure JS with no dependencies for images in H5.",
-  "main": "src/index.js",
+  "main": "dist/dmgload.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production node build.js",
     "test": "echo \"Error: no test specified\" && exit 1"

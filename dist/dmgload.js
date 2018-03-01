@@ -70,7 +70,7 @@ function throttle(func, config) {
 }
 
 var index = {
-    Dmgload: function Dmgload() {
+    lazyload: function lazyload() {
         var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
         var config = _extends({}, defaultConfig, options);
@@ -88,6 +88,8 @@ var index = {
             // 使用定时器查看是否需要更新。
             setInterval(updateImg, config.throttle_time);
         }
+        // 如果直出的页面本身就拥有了需要懒加载的文件，页面一开始也要执行一遍。
+        updateImg();
     }
 };
 
