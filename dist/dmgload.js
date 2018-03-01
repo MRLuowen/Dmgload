@@ -1,4 +1,4 @@
-/*! dmgload - v1.0.0 - 2018-03-01
+/*! dmgload - v1.0.1 - 2018-03-01
 * https://github.com/MRLuowen/Dmgload#readme
 * Copyright (c) 2018 ; Licensed  */
 
@@ -6,7 +6,7 @@
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
 	typeof define === 'function' && define.amd ? define(factory) :
-	(global.lozad = factory());
+	(global.dmgload = factory());
 }(this, (function () { 'use strict';
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };

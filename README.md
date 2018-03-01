@@ -4,10 +4,12 @@
 
 ## Features
 - lazy loads elements performantly using pure JavaScript
-- high performant and very small size (less than 1KB)
+- high performant and very small size ( Bundle size: 1.47 KB, Gzipped size: 873 B )
 - design for mobile phone, can be used in android 2.3 and higher
 - solve ios scroll event only trigger at the ending
 - the most useful Feature, it support lazy-load Doms which is dynamic add to the document,you don't need call any other API。
+
+[中文](https://github.com/MRLuowen/Dmgload/blob/master/README_CN.md)
 
 ## Install
 
@@ -28,8 +30,11 @@ dmgload.Dmgload();
 var dmgload = require('dmgload');
 dmgload.Dmgload();
 ```
-
-In HTML, add an identifier to the element (default selector identified is `lozad` class):
+```html
+<script type="text/javascript" src="/dist/dmgload.min.js"></script>
+<script type="text/javascript"> dmgload.lazyload();</script>
+```
+In HTML, add an identifier to the element (default selector identified is `lazyload` class):
 ```html
 <img class="lazyload" data-src="image.png" />
 ```

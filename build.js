@@ -53,7 +53,7 @@ function build(format) {
     bundle.write({
       file: targets[format],
       format: format === 'min' ? 'umd' : format,
-      name: 'lozad'
+      name: 'dmgload'
     })
   )
 }
