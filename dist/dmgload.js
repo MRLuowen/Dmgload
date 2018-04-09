@@ -1,4 +1,4 @@
-/*! dmgload - v1.0.1 - 2018-03-01
+/*! dmgload - v1.0.4 - 2018-04-09
 * https://github.com/MRLuowen/Dmgload#readme
 * Copyright (c) 2018 ; Licensed  */
 
@@ -35,11 +35,12 @@ function loadImage(config) {
         // 首先是懒加载的图片对象
         if (item.tagName == "IMG" && item.hasAttribute("data-src")) {
             // 位置在可视范围
-            if (inVisible(item, config.offset)) {
-                item.src = item.getAttribute("data-src");
+            var imgsrc = item.getAttribute("data-src");
+            if (inVisible(item, config.offset) && imgsrc) {
+                item.src = imgsrc;
                 //在下载发生错误的时候使用默认图片。
                 item.onerror = function () {
-                    item.src = config.defaut_img;
+                    item.src = config.default_img;
                 };
                 // 移除class，防止再次触发。
                 item.className = item.className.replace(config.selector.slice(1), "");

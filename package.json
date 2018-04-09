@@ -1,6 +1,6 @@
 {
   "name": "dmgload",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Highly performant, light and configurable lazy loader in pure JS with no dependencies for images in H5.",
   "main": "dist/dmgload.js",
   "scripts": {
